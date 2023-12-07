@@ -4,6 +4,7 @@ import { useState } from 'react';
 interface Department {
   id: string;
   name: string;
+  isOpen:Boolean,
   subDepartments: SubDepartment[];
 }
 
@@ -16,6 +17,7 @@ const sampleData: Department[] = [
   {
     id: '1',
     name: 'Department 1',
+    isOpen:false,
     subDepartments: [
       { id: '1.1', name: 'Sub Department 1.1' },
       { id: '1.2', name: 'Sub Department 1.2' },
@@ -24,6 +26,7 @@ const sampleData: Department[] = [
   {
     id: '2',
     name: 'Department 2',
+    isOpen:false,
     subDepartments: [
       { id: '2.1', name: 'Sub Department 2.1' },
       { id: '2.2', name: 'Sub Department 2.2' },

@@ -15,6 +15,7 @@ const UserForm = () => {
   const handleSubmit = () => {
     // Save data to local storage and redirect to the second page
     localStorage.setItem('userData', JSON.stringify(formData));
+    window.location.replace('/secondpage');
     
   };
 
