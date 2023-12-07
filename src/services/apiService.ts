@@ -1,5 +1,4 @@
-// apiService.ts
-const API_URL = 'https://jsonplaceholder.typicode.com'; // Update with your API endpoint
+const API_URL = 'https://jsonplaceholder.typicode.com'; 
 
 export const fetchData = async (): Promise<any[]> => {
   try {
